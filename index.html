@@ -46,7 +46,7 @@
       </div>
     </nav>
     <!-- Page header with logo and tagline-->
-    <header class="py-5 bg-Indigo border-bottom mb-4">
+    <header class="py-5 bg-Indigo border-bottom mb-4 cabecalho-background">
       <div class="container">
         <div class="text-center my-5">
           <h1 class="fw-bolder text-light">Blog Code</h1>
@@ -54,39 +54,12 @@
         </div>
       </div>
     </header>
+    
     <!-- Page content-->
     <div class="container">
       <div class="row">
-        <!-- Blog entries-->
-        <div class="destaque"></div>
-        <div class="col-lg-8 page">
-          <!-- Featured blog post-->
-          <div class="card mb-4">
-            <a href="#!"
-              ><img
-                class="card-img-top"
-                src="https://raw.githubusercontent.com/Rosanaxica/Rosanaxica/master/github_cover.png"
-                alt="Imagem de avatar futurista com mulher segurando um diamente roxo, contendo também uma mensagem na língua inglesa: Making the difference. Changing Lives. Coding."
-            /></a>
-            <div class="card-body bg-dark text-light">
-              <h2 class="card-title">Blog Pessoal Projeto Integrador Univesp III</h2>
-              <p class="card-text">
-                Projeto prático de software da disciplina Projeto Integrador III
-                da Universidade Virtual de São Paulo - Univesp, tendo como cliente
-                a Rosana Damasceno, Engenhaira de Software.
-              </p>
-            </div>
-          </div>
-          <!-- Nested row for non-featured blog posts-->
-          <div class="row">
-            <div class="col-lg-6 posts">
-              <!-- Blog post-->
-              </div>
-            </div>
-          </div>
-        </div>
         <!-- Side widgets-->
-        <div class="col-lg-4">
+        <div class="col-12">
           <!-- Search widget-->
           <div class="card mb-4 bg-dark text-light border-light">
             <div class="card-header">Buscar</div>
@@ -109,6 +82,35 @@
             </div>
           </div>       
         </div>
+      </div>
+      <div class="row">
+        <!-- Blog entries-->
+        <section class="destaque"></section>
+        <section class="col-12 page">
+          <!-- Featured blog post-->
+          <div class="card mb-4">
+            <a href="#!"
+              ><img
+                class="card-img-top"
+                src="https://raw.githubusercontent.com/Rosanaxica/Rosanaxica/master/github_cover.png"
+                alt="Imagem de avatar futurista com mulher segurando um diamente roxo, contendo também uma mensagem na língua inglesa: Making the difference. Changing Lives. Coding."
+            /></a>
+            <div class="card-body bg-dark text-light px-5">
+              <h2 class="card-title">Blog Pessoal Projeto Integrador Univesp III</h2>
+              <p class="card-text">
+                Projeto prático de software da disciplina <a href="https://apps.univesp.br/o-que-e-projeto-integrador/" target="_blank">Projeto Integrador III</a>
+                da Universidade Virtual de São Paulo - Univesp, tendo como cliente a Rosana Damasceno, Engenheira de Software.
+              </p>
+            </div>
+          </div>
+          <!-- Nested row for non-featured blog posts-->
+          <div class="row">
+            <div class="col-lg-12 posts">
+              <!-- Blog post-->
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
     </div>
     <!-- Footer-->

@@ -31,12 +31,12 @@ function esconderPosts(obj) {
 function mostraPostClicado(post) {
   const page = document.querySelector(".destaque");
   const artigo = montaElemento(post, false);
-  page.classList.add("col-lg-8");
+  page.classList.add("col-12");
   page.appendChild(artigo);
 }
 
 function montaElemento(conteudo, temBotao) {
-  const myArticle = document.createElement("div");
+  const myArticle = document.createElement("article");
   const myArticle2 = document.createElement("div");
   const myH2 = document.createElement("h2");
   const myPara1 = document.createElement("p");
@@ -53,23 +53,36 @@ function montaElemento(conteudo, temBotao) {
   myArticle.appendChild(myArticle2);
   myArticle2.appendChild(myH2);
   myArticle2.appendChild(myPara1);
-
+  let botao;
   if (temBotao) {
-    const botao = montaBotao(conteudo);
-    myArticle2.appendChild(botao);
+    botao = montaBotao(conteudo);
+  } else {
+    botao = montaBotaoVoltar();
   }
-
+  myArticle2.appendChild(botao);
   return myArticle;
 }
 
-function montaBotao (post) {
+function montaBotao(post) {
   const myButton = document.createElement("button");
 
   myButton.classList.add("btn", "btn-dark", "bg-purple", "btn-purple");
 
   myButton.textContent = "Ler Mais →";
-  myButton.addEventListener("click", function() {
+  myButton.addEventListener("click", function () {
     esconderPosts(post);
   });
-  return myButton
+  return myButton;
+}
+
+function montaBotaoVoltar() {
+  const myButton = document.createElement("button");
+
+  myButton.classList.add("btn", "btn-dark", "bg-purple", "btn-purple");
+
+  myButton.textContent = "Voltar";
+  myButton.addEventListener("click", function () {
+    window.location.href = "./index.html";
+  });
+  return myButton;
 }

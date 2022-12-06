@@ -11290,3 +11290,8 @@ textarea.form-control-lg {
   background-color: var(--bs-purple);
   border-color: var(--bs-purple);
 }
+
+.cabecalho-background {
+  background-image: url("https://wallpapercave.com/wp/wp11052566.jpg");
+  object-fit: contain;
+}
